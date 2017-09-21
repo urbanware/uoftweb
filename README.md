@@ -1,6 +1,6 @@
 # README #
 
-Projects for the satisfaction of completion of SCS_2679_019 Mobile Compatable Web Programming, University of Toronto, by Walter Spicer. 
+Projects for the satisfaction of completion of SCS_2679_019 Mobile Compatible Web Programming, University of Toronto, by Walter Spicer. 
 
 ### List of Projects ###
 

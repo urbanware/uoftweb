@@ -4,15 +4,14 @@ Projects for the satisfaction of completion of SCS_2679_019 Mobile Compatible We
 
 ### List of Projects ###
 
-* To Be Edited as completed with links to website
-* Quick summary
-* Version
+* Assignment One
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### Links ###
 
-* git clone https[://urbanware@bitbucket.org/urbanware/uoftweb.git]()
-* https://limitless-depths-28791.herokuapp.com
+* website: https://limitless-depths-28791.herokuapp.com
+* git clone https[://github.com/urbanware/uoftweb.git]() 
+* git clone https[://bitbucket.org/urbanware/uoftweb.git]()
 
 ### Setup Heroku Notes ###
 

@@ -1,10 +1,42 @@
 
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
-    <title>Assignment One Page</title>
+    <script src="modernizr-custom.js"></script>
+
+    <title>Assignment Two Part Three</title>
     <link rel="stylesheet" href="example.css">
+
+    
+      
+    <script>
+      if (Modernizr.geolocation) {
+        alert("This browser supports geolocation!");
+      } else {
+        alert("no geolocation  :(");
+      }
+    </script>
+
+    <style>
+      
+    /*.cssgradients .header {
+      background-image: linear-gradient(blue, purple);
+    }
+    */  
+      
+
+      .no-progressbar,meter .box {
+        color: red;
+      }
+      .progressbar {
+        color: green;
+      }
+
+
+
+    </style>
+
   </head>
 
   <body>
@@ -12,6 +44,7 @@
     
       <h1>HTML5 Form</h1>
     
+     
 
     <nav>
     </nav>
@@ -25,6 +58,8 @@
     a clear all button
     a checkbox to confirm that the data entered is fictitious
 -->
+
+
 <form action="#">
   <label>Email Address: <input type="email" name="email"></label>
   <br/><br/>
@@ -42,7 +77,7 @@
   <br/> 
 
   Comments:<br/>
-  <textarea rows="10" cols="50">Add your comments</textarea>
+  <textarea class="progressbar" rows="10" cols="50">Add your comments</textarea>
   <br/>
 
   <input type="checkbox" name="fictitious" value="True" required> I confirm that the data in this form is fake.
@@ -51,6 +86,10 @@
 
   <input type="reset" value="Reset"> | <input type="submit" value="Submit">
 </form> 
+
+<progress class="progressbar" max="100" value="60">
+  <strong>Progress: 60% done.</strong>
+</progress>
 
 <br/>
 <p>(If you submit this form nothing will happen.)</p>

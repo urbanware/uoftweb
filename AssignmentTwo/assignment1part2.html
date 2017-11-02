@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <title>Assignment One Page</title>
+    <link rel="stylesheet" href="example.css">
+  </head>
+
+  <body>
+    <div>
+    
+      <h1>HTML5 Form</h1>
+    
+
+    <nav>
+    </nav>
+
+<!--
+    email address
+    personal URL
+    year of birth (numeric increments or calendar)
+    gender (radio buttons)
+    comments (text area)
+    a clear all button
+    a checkbox to confirm that the data entered is fictitious
+-->
+<form action="#">
+  <label>Email Address: <input type="email" name="email"></label>
+  <br/><br/>
+
+  <label>Personal URL: <input type="url" name="url"></label>
+  <br/><br/>
+
+  <label>Year of Birth: <input type="date" name="yearOfBirth"></label> 
+  <br/><br/>
+
+  Gender:<br/>
+  <label><input type="radio" name="male"> Male</label><br/>
+  <label><input type="radio" name="female"> Female</label><br/>
+  <label><input type="radio" name="nonBinary"> Non-Binary</label><br/>
+  <br/> 
+
+  Comments:<br/>
+  <textarea rows="10" cols="50">Add your comments</textarea>
+  <br/>
+
+  <input type="checkbox" name="fictitious" value="True" required> I confirm that the data in this form is fake.
+  <br/><br/>
+
+
+  <input type="reset" value="Reset"> | <input type="submit" value="Submit">
+</form> 
+
+<br/>
+<p>(If you submit this form nothing will happen.)</p>
+<br/>
+
+
+  <a href="index.html">Back</a>
+  </div>
+  </body>
+</html>

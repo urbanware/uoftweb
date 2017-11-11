@@ -20,6 +20,7 @@ Projects for the satisfaction of completion of SCS_2679_019 Mobile Compatible We
 * git init, create project on laptop
 * heroku create, to generate subdomain
 * heroku git:remote -a put-subdomain-here
+* Make an index.html file
 * echo '{}' < composer.json
 * Make index.php file containing 
 ```php

@@ -15,13 +15,16 @@ Projects for the satisfaction of completion of SCS_2679_019 Mobile Compatible We
 
 ### Setup Heroku Notes ###
 
+* make sure heroku logged in and account setup (see heroku docs)
 * cd into project directory
 * git init, create project on laptop
-* make sure heroku logged in and account setup (see heroku docs)
 * heroku create, to generate subdomain
 * heroku git:remote -a put-subdomain-here
 * echo '{}' < composer.json
-* Make index.php file containing <?php include\\_once("index.html") ?>
-* git add .
+* Make index.php file containing 
+```php
+<?php include_once("index.html") ?>
+```
+* git add . 
 * git commit -am "Initial commit"
 * git push heroku master

@@ -26,5 +26,5 @@ Projects for the satisfaction of completion of SCS_2679_019 Mobile Compatible We
 <?php include_once("index.html") ?>
 ```
 * git add . 
-* git commit -am "Initial commit"
+* git commit -m "Initial commit"
 * git push heroku master

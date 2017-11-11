@@ -28,4 +28,5 @@ Projects for the satisfaction of completion of SCS_2679_019 Mobile Compatible We
 ```
 * git add . 
 * git commit -m "Initial commit"
+* git push github master
 * git push heroku master

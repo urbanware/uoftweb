@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hammer.js - Pinch and Rotate</title>
     <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <script>
+    var myElement = document.getElementById("myElement"), mc = new Hammer.Manager(myElement), pinch = new Hammer.Pinch, rotate = new Hammer.Rotate; pinch.recognizeWith(rotate), mc.add([pinch, rotate]), mc.on("pinch rotate", function (e) { myElement.textContent += e.type + " " });
+    </script>
 
      <style>
      #myElement { 
@@ -18,10 +21,13 @@
 
 </head>
 <body>
-    
 
 
-<div id="myElement">This element can be pinched and rotated</div>
+    <div id="myElement">Pinch(works)</div>
+    <p>
+        Block expands on pinch during testing
+    </p>
 
+ <a href="index.html">Back</a>   
 </body>
 </html>

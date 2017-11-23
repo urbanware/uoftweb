@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hammer.js - Pinch and Rotate</title>
+    <!-- <link rel="stylesheet" href="example.css"> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+    <script src="/scripts/tap-gesture.js"></script>
+
+    <script>
+    var square = document.querySelector(".square"), manager = new Hammer.Manager(square), Swipe = new Hammer.Swipe; manager.add(Swipe); var deltaX = 0, deltaY = 0; manager.on("swipe", function (e) { deltaX += e.deltaX; var a = e.offsetDirection, r = "translate3d(" + deltaX + "px, 0, 0)"; 4 !== a && 2 !== a || (e.target.innerText = deltaX, e.target.style.transform = r) });
+    </script>
+    <style>
+     html, body { 
+         height: 100%; 
+        } 
+    body { 
+        background-color: #000; 
+        color: #FFF; 
+        margin: 0; 
+    } 
+    .flex-column { 
+        display: flex; 
+        flex-direction: column; 
+    } 
+    .center-center { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    } 
+    .square { 
+        width: 90px; 
+        height: 90px; 
+        margin: 30px; 
+        background-color: #7E57C2; 
+        transition: transform 300ms ease-out; 
+    }
+    </style>
+</head>
+
+    <body class="flex-column center-center">
+        <header>Swipe Left or Right</header>
+        <div class="square center-center"></div>
+    </body>
+    
+</html>

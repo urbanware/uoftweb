@@ -9,42 +9,46 @@
     <!-- <link rel="stylesheet" href="example.css"> -->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
-    <script src="/scripts/tap-gesture.js"></script>
+    
 
     <script>
-    var square = document.querySelector(".square"), manager = new Hammer.Manager(square), Swipe = new Hammer.Swipe; manager.add(Swipe); var deltaX = 0, deltaY = 0; manager.on("swipe", function (e) { deltaX += e.deltaX; var a = e.offsetDirection, r = "translate3d(" + deltaX + "px, 0, 0)"; 4 !== a && 2 !== a || (e.target.innerText = deltaX, e.target.style.transform = r) });
+    var square=document.querySelector('.square');var manager=new Hammer.Manager(square);var Tap=new Hammer.Tap({taps:1});manager.add(Tap);manager.on('tap',function(e){e.target.classList.toggle('expand')});
     </script>
     <style>
-     html, body { 
-         height: 100%; 
-        } 
-    body { 
-        background-color: #000; 
-        color: #FFF; 
-        margin: 0; 
-    } 
-    .flex-column { 
-        display: flex; 
-        flex-direction: column; 
-    } 
-    .center-center { 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-    } 
-    .square { 
-        width: 90px; 
-        height: 90px; 
-        margin: 30px; 
-        background-color: #7E57C2; 
-        transition: transform 300ms ease-out; 
-    }
+        * {
+        box-sizing: border-box;
+        }
+
+        html, body {
+        height: 100%;
+        }
+
+        body {
+        background-color: #000;
+        margin: 0;
+        }
+
+        .center-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .square {
+        width: 90px;
+        height: 90px;
+        background-color: #00B0FF;
+        transition: transform 300ms ease-out;
+        }
+
+        .expand {
+        transform: scale(2.5);
+        }
     </style>
 </head>
 
-    <body class="flex-column center-center">
-        <header>Swipe Left or Right</header>
-        <div class="square center-center"></div>
-    </body>
+<body class="center-center">  
+    <div class="square"></div>
+</body>  
     
 </html>

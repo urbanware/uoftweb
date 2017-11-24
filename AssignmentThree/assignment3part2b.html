@@ -8,8 +8,7 @@
     <title>Hammer.js - Pinch and Rotate</title>
     <!-- <link rel="stylesheet" href="example.css"> -->
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
-    <script src="tap.js"></script>
+    <script src="https://cdn.rawgit.com/hammerjs/touchemulator/master/touch-emulator.js"></script>
 
     <script>
     var square=document.querySelector('.square');var manager=new Hammer.Manager(square);var Tap=new Hammer.Tap({taps:1});manager.add(Tap);manager.on('tap',function(e){e.target.classList.toggle('expand')});
@@ -48,7 +47,7 @@
 </head>
 
 <body class="center-center">  
-    <div class="square"></div>
+    <div class="square">Pinch Zoom and Move</div>
 </body>  
     
 </html>
